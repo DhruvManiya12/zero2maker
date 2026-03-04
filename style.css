@@ -7,59 +7,67 @@ body {
 }
 
 header {
-  padding: 40px;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero {
+  margin-top: 60px;
 }
 
 button {
-  padding: 10px 20px;
-  border-radius: 20px;
+  padding: 12px 25px;
   border: none;
+  border-radius: 25px;
   background: #00f5ff;
   cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
 }
 
-/* Chat Container */
-.chat-container {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  background: #1e1e2f;
+button:hover {
+  transform: scale(1.1);
+  background: #00c3ff;
+}
+
+section {
+  margin-top: 80px;
+  padding: 20px;
+}
+
+.projects {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 25px;
   border-radius: 15px;
-  display: none;
-  flex-direction: column;
-  overflow: hidden;
+  width: 260px;
+  margin: 20px auto;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
 }
 
-.chat-header {
-  background: #00f5ff;
-  padding: 10px;
-  color: black;
-  font-weight: bold;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
+.card:hover {
+  transform: translateY(-10px);
+  background: rgba(255,255,255,0.2);
 }
 
-.chat-box {
-  height: 250px;
-  overflow-y: auto;
-  padding: 10px;
-  text-align: left;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.chat-input {
-  display: flex;
-}
-
-.chat-input input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-}
-
-.chat-input button {
-  background: #00f5ff;
-  border: none;
-  padding: 10px;
+footer {
+  margin-top: 100px;
+  padding: 20px;
+  font-size: 14px;
 }
